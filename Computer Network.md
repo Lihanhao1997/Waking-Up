@@ -395,6 +395,14 @@ Cookie保存在客户端本地，客户端请求服务器时会将Cookie一起�
 
 用于解决内网中的主机要和因特网上的主机通信。由NAT路由器将主机的本地IP地址转换为全球IP地址，分为静态转换（转换得到的全球IP地址固定不变）和动态NAT转换。
 
+### HTTP请求报文结构  
+
+一个HTTP请求报文可以由请求行、请求头、空行和请求体4个部分组成。
+请求行是由三部分组成:
+   请求方式
+   请求资源路径
+   HTTP协议版本
+
 ### 参考
 - [面试/笔试第一弹 —— 计算机网络面试问题集锦](https://blog.csdn.net/justloveyou_/article/details/78303617)
 - [什么时候选TCP、UDP？](https://blog.csdn.net/yjxsdzx/article/details/71937886)
