@@ -574,6 +574,8 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 - 最短寻道时间优先
 - 电梯算法：电梯总是保持一个方向运行，直到该方向没有请求为止，然后改变运行方向。
 
+### [python设计线程池](https://blog.csdn.net/a519640026/article/details/76157999?ops_request_misc=&request_id=&biz_id=102&utm_term=python%E8%AE%BE%E8%AE%A1%E7%BA%BF%E7%A8%8B%E6%B1%A0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-.first_rank_v2_pc_rank_v29&spm=1018.2226.3001.4187)
+
 ### 参考
 - [进程间通信IPC -- 简书](https://www.jianshu.com/p/c1015f5ffa74)
 - [面试/笔试第二弹 —— 操作系统面试问题集锦 - CSDN博客](https://blog.csdn.net/justloveyou_/article/details/78304294)
