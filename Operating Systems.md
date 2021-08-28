@@ -21,6 +21,8 @@
     * [什么是虚拟内存？](#什么是虚拟内存)
     * [有哪些页面置换算法？](#有哪些页面置换算法)
     * [缓冲区溢出问题](#缓冲区溢出问题)
+* Linux
+    * [五种io模型](#五种io模型)
 * [磁盘调度](#磁盘调度)
 * [参考](#参考)
 
@@ -567,6 +569,15 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 
 更详细的可以参考：https://imageslr.github.io/2020/07/08/tech-interview.html#stackoverflow
 
+### Linux
+#### [五种io模型](https://www.jianshu.com/p/486b0965c296)	
+
+- 阻塞式I/O
+- 非阻塞式I/O
+- I/O复用（select，poll，epoll等）
+- 信号驱动式I/O（SIGIO）
+- 异步I/O（POSIX的aio_系列函数）
+
 ### 磁盘调度
 过程：磁头（找到对应的盘面）；磁道（一个盘面上的同心圆环，寻道时间）；扇区（旋转时间）。为减小寻道时间的调度算法：
 
@@ -582,6 +593,8 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 - [线程同步与并发 - - SegmentFault](https://segmentfault.com/a/1190000018970361)
 - [彻底搞懂epoll高效运行的原理](http://baijiahao.baidu.com/s?id=1641172494287388070&wfr=spider&for=pc)
 - [用户态与内核态的切换](https://www.cnblogs.com/lirong21/p/4213028.html)
+
+
 
 ### 待完成
 - [ ] IPC
