@@ -21,6 +21,7 @@
     * [什么是虚拟内存？](#什么是虚拟内存)
     * [有哪些页面置换算法？](#有哪些页面置换算法)
     * [缓冲区溢出问题](#缓冲区溢出问题)
+    * [操作系统内存分配方式](#操作系统内存分配方式)
 * Linux
     * [五种io模型](#五种io模型)
 * [磁盘调度](#磁盘调度)
@@ -568,6 +569,9 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 </details>
 
 更详细的可以参考：https://imageslr.github.io/2020/07/08/tech-interview.html#stackoverflow
+
+### [操作系统内存分配方式](https://blog.csdn.net/moonspiritacm/article/details/100139461?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163037822616780357218963%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163037822616780357218963&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-100139461.first_rank_v2_pc_rank_v29&utm_term=%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F&spm=1018.2226.3001.4187)
+	
 
 ### Linux
 #### [五种io模型](https://www.jianshu.com/p/486b0965c296)	
