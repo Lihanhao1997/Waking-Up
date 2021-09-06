@@ -516,7 +516,7 @@ IO多路复用（IO Multiplexing）是指单个进程/线程就可以同时处�
 
 虚拟内存的实现方式、页表/多级页表、缺页中断、不同的页面淘汰算法：[答案](https://imageslr.github.io/2020/07/08/tech-interview.html#virtual-memory)。
 
-##### 如何进行地址空间到物理内存的映射？
+####如何进行地址空间到物理内存的映射？
 <details>
 <summary>展开</summary>
 
@@ -529,7 +529,7 @@ IO多路复用（IO Multiplexing）是指单个进程/线程就可以同时处�
 - **最佳页面置换算法**OPT（Optimal replacement algorithm）：置换以后不需要或者最远的将来才需要的页面，是一种理论上的算法，是最优策略；
 - **先进先出**FIFO：置换在内存中驻留时间最长的页面。缺点：有可能将那些经常被访问的页面也被换出，从而使缺页率升高；
 - **第二次机会算法**SCR：按FIFO选择某一页面，若其访问位为1，给第二次机会，并将访问位置0；
-- **时钟算法** Clock：SCR中需要将页面在链表中移动（第二次机会的时候要将这个页面从链表头移到链表尾），时钟算法使用环形链表，再使用一个指针指向最老的页面，避免了移动页面的开销；
+- **时钟置换算法** Clock：SCR中需要将页面在链表中移动（第二次机会的时候要将这个页面从链表头移到链表尾），时钟算法使用环形链表，再使用一个指针指向最老的页面，避免了移动页面的开销；
 - **最近未使用算法**NRU（Not Recently Used）：检查访问位R、修改位M，优先置换R=M=0，其次是（R=0, M=1）；
 - **最近最少使用算法**LRU（Least Recently Used）：置换出未使用时间最长的一页；实现方式：维护时间戳，或者维护页表项的访问字段记录上次被访问以来经历的时间t。当一个页面被访问时，将这个页面移到链表表头。这样就能保证链表表尾的页面是最近最久未访问的。（性能最接近opt，需要专门硬件支持，实现困难开销大）
 - **最不经常使用算法**NFU：置换出访问次数最少的页面
@@ -571,7 +571,7 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 更详细的可以参考：https://imageslr.github.io/2020/07/08/tech-interview.html#stackoverflow
 
 ### [操作系统内存分配方式](https://blog.csdn.net/moonspiritacm/article/details/100139461?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163037822616780357218963%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163037822616780357218963&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-100139461.first_rank_v2_pc_rank_v29&utm_term=%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F&spm=1018.2226.3001.4187)
-	
+
 
 ### Linux
 #### [五种io模型](https://www.jianshu.com/p/486b0965c296)	
